@@ -1,4 +1,4 @@
-name: Build and Test CookBook
+name: Build and Test Cookbook
 
 on:
   push:
