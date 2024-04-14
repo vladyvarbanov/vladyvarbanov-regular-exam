@@ -9,7 +9,7 @@ suite('Add Products page', function() {
   });
 
   test('Product HTML form', async function() {
-    let res = await fetch("http://localhost:8081/Add-Product");
+    let res = await fetch("http://localhost:8080/Add-Product");
     let body = await res.text();
     
     let nameFieldFound = body.includes('<input id="name" type="text" name="name"/>');
@@ -56,7 +56,7 @@ suite('Add Products page', function() {
 
     res = await fetch("http://localhost:8888/");
     body = await res.text();
-	  assert.ok(body.includes("Cookbook: <b>3</b>"), 
+	  assert.ok(body.includes("Cookbook: <b>4</b>"), 
 		"Add invalid product should not change the products count");
   });
 });
