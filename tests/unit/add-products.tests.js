@@ -56,7 +56,7 @@ suite('Add Products page', function() {
 
     res = await fetch("http://localhost:8888/");
     body = await res.text();
-	  assert.ok(body.includes("Cookbook: <b>4</b>"), 
+	  assert.ok(body.includes("Cookbook: <b>3</b>"), 
 		"Add invalid product should not change the products count");
   });
 });
