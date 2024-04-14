@@ -13,7 +13,7 @@ if (!port) port = process.env['PORT'];
 if (!port) port = 8081;
 
 app.listen(port, () => {
-  console.log(`App started. Listening at http://127.0.0.1:${port}`);
+  console.log(`App started. Listening at http://localhost:${port}`);
 })
 .on('error', function(err) {
   if (err.errno === 'EADDRINUSE')
